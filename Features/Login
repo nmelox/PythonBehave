@@ -1,0 +1,11 @@
+Feature: Login Demotours page
+
+Scenario: Valid Login
+    Given I enter <username>
+    And I enter <password>
+    When I press sign-in button
+    Then login result must be <result>
+
+Example:
+|username   |password   |result     |
+|mercury    |mercury    |goodLogin  |
